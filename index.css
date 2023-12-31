@@ -1,0 +1,357 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+nav-bar{
+    display: flex;
+background-color:white;
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+}
+nav-bar div.left{
+    display:block;
+    margin-left: 3vh;
+    position: absolute;
+    width:20%;
+    color: rgb(30, 0, 255);
+
+}
+div.left h3{
+    border-bottom: 3px solid blue;
+}
+div.right{
+    width: 80%;
+    position:absolute;
+    margin-left:45vh;
+}
+div.right ul li a{
+    text-decoration: none;
+    color: rgb(30, 0, 255);
+    margin-left: 10vh;
+    gap:3vh;
+}
+div.right ul li a:hover{
+        color:rgb(162, 3, 248);
+}
+section{
+    position:absolute;
+    height:70%;
+    margin-top: 20vh;
+    width: 100%;
+    background: blue;
+    color: rgb(241, 245, 8);
+}
+section div.cdiv{
+    position: absolute;
+    display: block;
+    height: 50%;
+    width: 30%;
+    background: linear-gradient(45deg,#f1f508 0%,black 50%,white 50%,white 100%);
+    margin: -0vh 0vh 0vh -30vh;
+    border-radius: 12px;
+}
+section div.cdiv h1,h4,h3{
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
+ position: relative;
+ margin-top:1vh;
+ color:blue;
+}
+section div.cdiv h1{
+    position: relative;
+    margin: 8vh 0vh 0vh 30vh;
+}
+section div.cdiv h3{
+    position: relative;
+    margin: 3vh 0vh 0vh -10vh;
+    word-spacing: 10vh;
+     animation: secdiv 2s infinite;
+}
+@keyframes secdiv{
+    to{
+        margin: 3vh 0vh 0vh -5vh;
+    word-spacing: 40vh;
+    }
+}
+section div.rdiv{
+    position:relative;
+    margin: -4vh 0vh 0vh 0vh;
+}
+section div.rdiv img{
+    border-radius: 20% 30%;
+   width: 20%;
+}
+about-sec{
+    position:absolute;
+    height:80%;
+    overflow-y: hidden;
+    margin-top: 100vh;
+    width: 100%;
+    display: flex;
+    background: rgb(241, 245, 8);
+}
+about-sec div.center-con{
+        transform: translate(100vh, 3vh);
+        font-size: 40px;
+}
+about-sec div.leftdiv{
+    transform: translate(20vh, 30vh);
+}
+about-sec div.leftdiv h3{
+    font-size: 40px;
+}
+div.leftdiv button{
+    background-color: blue;
+    padding: 5px 9px;
+    border-radius: 3px 5px;
+    border: none;
+}
+div.leftdiv button a{
+    color:rgb(241, 245, 8);
+}
+div.rightdiv img{
+    height: 40vh;
+    width: 60vh;
+    position: absolute;
+    transform: translate(40vh, 30vh);
+}
+nav-bar{
+    display: flex;
+     background: white;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    text-align: center;
+    gap: 70vh;
+    position: fixed;
+    z-index: 1;
+}
+div.left{
+    margin-left: 25vh;
+    color: rgb(30, 0, 255);
+
+}
+div.left h3{
+    border-bottom: 5px solid blue;
+}
+div.right ul li a{
+    text-decoration: none;
+    color: rgb(30, 0, 255);
+    margin-left: 7vh;
+}
+div.right ul li a:hover{
+        color:rgb(162, 3, 248);
+}
+section{
+    position:absolute;
+    height:80%;
+    margin-top: 20vh;
+    width: 100%;
+    background: blue;
+    color: rgb(241, 245, 8);
+}
+section div.cdiv{
+    position: absolute;
+    transform: translate(50vh, 30vh);
+}
+section div.cdiv h1{
+  font-size: 30px;
+}
+section div.rdiv{
+    position: relative;
+    transform: translate(70%, 60%);
+}
+about-sec{
+    position:absolute;
+    height:80%;
+    overflow-y: hidden;
+    margin-top: 100vh;
+    width: 100%;
+    display: flex;
+    background: rgb(241, 245, 8);
+}
+about-sec div.center-con{
+        transform: translate(100vh, 3vh);
+        font-size: 40px;
+}
+about-sec div.leftdiv{
+    transform: translate(20vh, 30vh);
+}
+about-sec div.leftdiv h3{
+    font-size: 40px;
+}
+div.leftdiv button{
+    background-color: blue;
+    padding: 5px 9px;
+    border-radius: 3px 5px;
+    border: none;
+}
+div.leftdiv button a{
+    color:rgb(241, 245, 8);
+}
+div.rightdiv img{
+    height: 40vh;
+    width: 60vh;
+    position: absolute;
+    transform: translate(40vh, 30vh);
+}
+
+
+
+                             /* one pluse nord ce2 lite 5G css */
+
+
+@media (min-width: 565px) and (max-width: 800px){
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    nav-bar{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    nav-bar div.left{
+       
+        margin: 0vh 0vh 0vh 0vh;
+        width: 30%;
+        align-items: center;
+        text-align: center;
+        scale: .8;
+        animation: width 2s infinite;
+    }
+    div.left h3{
+        font-size: 17px;
+        border-bottom: 2px solid red;
+        animation: border 2s infinite;
+    }
+    @keyframes border{
+        0%,50%{
+            border-width: 5px;
+            border-bottom: 2px solid blue;
+        }
+        50%,100%{
+            border-bottom:2px solid red;
+            border-width: 7px;
+        }
+        
+    }
+div.right{
+    display: flex;
+    margin: 10vh 0vh 0vh 0vh;
+}
+section{
+    background: linear-gradient(45deg, white 0%,#000000 35%,rgb(253, 170, 4) 30%,black 100%);
+    animation: background 2s infinite;
+}
+@keyframes background {
+    0%,50%{
+    background: linear-gradient(45deg, white 0%,#000000 45%,rgb(253, 170, 4) 50%,black 100%);
+    }
+    
+}
+section div.cdiv{
+    height:50%;
+    width:60% ;
+    margin: -20vh 0vh 0vh -40vh;
+}
+section div.cdiv p{
+        font-size:20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+section div.rdiv img{
+    width: 30%;
+    height: 50%;
+    border-radius: 70%;
+    margin-left: 0vh;
+    animation: shadow 1s infinite;
+}
+@keyframes shadow {
+    0%,50%{
+        box-shadow: 3px 6px 12px #03fffb;
+    }
+    50%,100%{
+        box-shadow: 3px 6px 22px #261c5e inset, 3px 10px 22px #fb0808;
+    }
+    
+}
+about-sec{
+    flex-direction: column;
+}
+about-sec div.leftdiv{
+    height: 35vh;
+    width:90%;
+    margin: -25vh 0vh 0vh -15vh;
+    align-items: center;
+    text-align: center;
+    background:linear-gradient(25deg, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 9%, rgb(255, 254, 254) 50%, rgb(255, 253, 253) 80%);
+    color:red;
+}
+about-sec div.center-con{
+    position: relative;
+    margin: 0vh 0vh 0vh -50vh;
+}
+about-sec div.leftdiv button{
+    position: absolute;
+    margin: -10vh 0vh 0vh 30vh;
+}
+about-sec div.rightdiv img{
+    position: absolute;
+    margin: -8vh 0vh 0vh 25vh;
+}
+}
+
+
+
+            /* css use for phone and mobile version  */
+ @media (min-width:350px) and (max-width: 565px){
+             *{
+                    padding: 0;
+                    margin: 0;
+                    box-sizing: border-box;
+                }
+                nav-bar{
+                    flex-direction: column;
+                    width: 100%;
+                }
+                nav-bar div.left{
+                    width: 80%;
+                }
+                nav-bar div.right{
+                    width: 110%;
+                    margin: 15vh 0vh 0vh -10vh;
+                }
+                section div.cdiv{
+                    width: 90%;
+                    margin: 8vh 0vh 0vh -46vh;
+                }
+                section div.rdiv img{
+                    width: 100%;
+                    height: 30vh;
+                    margin: 3vh 0vh 0vh 0vh;
+                    border-radius: 20%;
+
+                }
+                section div.rdiv{
+                    position: absolute;
+                    margin: -20vh 0vh 0vh 20vh;
+
+                }
+                about-sec div.leftdiv{
+                    margin: 0vh 0vh 0vh 10vh;
+                }
+                about-sec div.center-con{
+                    margin: 0vh 0vh 0vh -50vh;
+                }
+                about-sec div.rightdiv img{
+                    position: absolute;
+                    margin: -80vh 0vh 0vh 0vh;
+                }
+            }
